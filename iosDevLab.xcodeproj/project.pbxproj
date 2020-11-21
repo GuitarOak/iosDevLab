@@ -16,6 +16,8 @@
 		BCB2EABD256922F00071003D /* iosDevLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EABC256922F00071003D /* iosDevLabTests.swift */; };
 		BCB2EAC8256922F00071003D /* iosDevLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAC7256922F00071003D /* iosDevLabUITests.swift */; };
 		BCB2EADF25692C230071003D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EADE25692C230071003D /* QuestionViewController.swift */; };
+		BCB2EAE42569448A0071003D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAE32569448A0071003D /* ResultViewController.swift */; };
+		BCB2EAE9256945220071003D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAE8256945220071003D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		BCB2EAC7256922F00071003D /* iosDevLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosDevLabUITests.swift; sourceTree = "<group>"; };
 		BCB2EAC9256922F00071003D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB2EADE25692C230071003D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		BCB2EAE32569448A0071003D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		BCB2EAE8256945220071003D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				BCB2EAB3256922F00071003D /* Info.plist */,
 				BCB2EAAB256922EB0071003D /* iosDevLab.xcdatamodeld */,
 				BCB2EADE25692C230071003D /* QuestionViewController.swift */,
+				BCB2EAE32569448A0071003D /* ResultViewController.swift */,
+				BCB2EAE8256945220071003D /* ResultView.swift */,
 			);
 			path = iosDevLab;
 			sourceTree = "<group>";
@@ -261,10 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB2EAE42569448A0071003D /* ResultViewController.swift in Sources */,
 				BCB2EAA3256922EB0071003D /* AppDelegate.swift in Sources */,
 				BCB2EAA5256922EB0071003D /* SceneDelegate.swift in Sources */,
 				BCB2EADF25692C230071003D /* QuestionViewController.swift in Sources */,
 				BCB2EAAD256922EB0071003D /* iosDevLab.xcdatamodeld in Sources */,
+				BCB2EAE9256945220071003D /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

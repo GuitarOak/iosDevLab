@@ -137,11 +137,28 @@
                         <outlet property="buttonAnswerC" destination="D19-PM-yj9" id="3BO-NZ-XYH"/>
                         <outlet property="buttonAnswerD" destination="aXy-ko-ErY" id="qsl-eb-zU8"/>
                         <outlet property="questionLabel" destination="vCG-aS-wFw" id="nQs-FQ-gAa"/>
+                        <segue destination="T4U-82-gvf" kind="show" identifier="ResultView" id="SWH-eS-r9S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nvb-wd-G6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1557" y="70"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ypP-V6-8k1">
+            <objects>
+                <viewController id="T4U-82-gvf" customClass="ResultViewController" customModule="iosDevLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xWQ-ee-eaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KAj-A2-ElU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z3e-ai-kfd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22l-tf-Yfp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710" y="70"/>
         </scene>
     </scenes>
     <resources>
