@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CDg-eT-jZZ">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="H64-uJ-kW5">
+            <objects>
+                <navigationController id="CDg-eT-jZZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0j1-So-838">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fp5-1b-Jzt" kind="relationship" relationship="rootViewController" id="1DU-Dj-ArI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t71-mn-04b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="70"/>
+        </scene>
+        <!--JU-Quiz-->
+        <scene sceneID="FZf-Th-ULg">
+            <objects>
+                <viewController id="fp5-1b-Jzt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yy4-Iu-Npl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y03-75-v5h">
+                                <rect key="frame" x="190" y="433" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="6Pk-RA-IXD" kind="show" id="5wi-bV-zQ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2MX-Qn-bzw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y03-75-v5h" firstAttribute="centerX" secondItem="yy4-Iu-Npl" secondAttribute="centerX" id="9VR-Wx-FW5"/>
+                            <constraint firstItem="y03-75-v5h" firstAttribute="centerY" secondItem="yy4-Iu-Npl" secondAttribute="centerY" id="rVV-Ay-Rd4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="JU-Quiz" id="fvi-qy-XxC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXL-Vm-bmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="70"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="CSA-12-NNR">
+            <objects>
+                <viewController id="6Pk-RA-IXD" customClass="QuestionViewController" customModule="iosDevLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JFA-on-U2f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-pM-847">
+                                <rect key="frame" x="15" y="103" width="384" height="744"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite food?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-aS-wFw">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="364.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zDg-VQ-Upq">
+                                        <rect key="frame" x="0.0" y="379.66666666666674" width="384" height="364.33333333333326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-om-Ep7">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="174.66666666666666"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qE-WC-exY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="174.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <state key="normal" title="Fish"/>
+                                                        <connections>
+                                                            <action selector="buttonAnswerAHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="O6Q-MA-rRp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ4-DR-Vu3">
+                                                        <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="174.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <state key="normal" title="Steak"/>
+                                                        <connections>
+                                                            <action selector="buttonAnswerBHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="8WP-p1-YWv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-oG-gkf">
+                                                <rect key="frame" x="0.0" y="189.66666666666669" width="384" height="174.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D19-PM-yj9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="174.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <state key="normal" title="Tacos"/>
+                                                        <connections>
+                                                            <action selector="buttonAnswerCHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="lR2-5q-flF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-ko-ErY">
+                                                        <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="174.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <state key="normal" title="Pizza"/>
+                                                        <connections>
+                                                            <action selector="buttonAnswerDHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="daZ-kk-lxW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GLK-bU-IvT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ip-pM-847" firstAttribute="bottom" secondItem="GLK-bU-IvT" secondAttribute="bottom" constant="-15" id="0Ry-vu-fwr"/>
+                            <constraint firstItem="1ip-pM-847" firstAttribute="leading" secondItem="GLK-bU-IvT" secondAttribute="leading" constant="15" id="ELq-c4-K1v"/>
+                            <constraint firstItem="1ip-pM-847" firstAttribute="top" secondItem="GLK-bU-IvT" secondAttribute="top" constant="15" id="L6z-Dv-b5N"/>
+                            <constraint firstItem="1ip-pM-847" firstAttribute="trailing" secondItem="GLK-bU-IvT" secondAttribute="trailing" constant="-15" id="McD-uJ-po4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iGy-Y6-c67"/>
+                    <connections>
+                        <outlet property="buttonAnswerA" destination="5qE-WC-exY" id="A8J-Nf-Ep8"/>
+                        <outlet property="buttonAnswerB" destination="TZ4-DR-Vu3" id="Gqe-Xc-wjl"/>
+                        <outlet property="buttonAnswerC" destination="D19-PM-yj9" id="3BO-NZ-XYH"/>
+                        <outlet property="buttonAnswerD" destination="aXy-ko-ErY" id="qsl-eb-zU8"/>
+                        <outlet property="questionLabel" destination="vCG-aS-wFw" id="nQs-FQ-gAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvb-wd-G6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
