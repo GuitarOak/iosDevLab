@@ -24,7 +24,7 @@ class ResultView: UIView {
     }
     
     private func setupView(){
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.adjustsFontForContentSizeCategory = true
@@ -42,6 +42,12 @@ class ResultView: UIView {
         resultLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
         resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
            
+        //Showing the logo
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "Logo"))
+        addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 20).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: resultLabel.centerXAnchor).isActive = true
         
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitle(NSLocalizedString("Back to start", comment: "Result button title"), for: .normal)

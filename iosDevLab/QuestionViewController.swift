@@ -30,6 +30,9 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        navigationItem.hidesBackButton = true
+        
         //Cofnigure of question label
         questionLabel.clipsToBounds = true
         questionLabel.layer.cornerRadius = 20
