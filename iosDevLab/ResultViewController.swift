@@ -21,7 +21,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        resultView.button.addTarget(self, action: #selector(backButtonHandler), for: .touchUpInside)
         //resultView.button.addTarget(self, action: #selector(backButtonHandler), for: .touchUpInside)
         
         // Do any additional setup after loading the view.

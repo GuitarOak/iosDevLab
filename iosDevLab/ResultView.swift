@@ -35,9 +35,13 @@ class ResultView: UIView {
         titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
+        resultLabel.font = UIFont.preferredFont(forTextStyle: .callout)
+        resultLabel.adjustsFontForContentSizeCategory = true
+        addSubview(resultLabel)
         resultLabel.translatesAutoresizingMaskIntoConstraints = false
         resultLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
-        resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true        
+        resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
+           
         
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitle(NSLocalizedString("Back to start", comment: "Result button title"), for: .normal)

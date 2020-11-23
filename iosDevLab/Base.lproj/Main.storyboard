@@ -27,7 +27,7 @@
         <!--JU-Quiz-->
         <scene sceneID="FZf-Th-ULg">
             <objects>
-                <viewController id="fp5-1b-Jzt" sceneMemberID="viewController">
+                <viewController id="fp5-1b-Jzt" customClass="StartViewController" customModule="iosDevLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yy4-Iu-Npl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
         <!--Question View Controller-->
         <scene sceneID="CSA-12-NNR">
             <objects>
-                <viewController id="6Pk-RA-IXD" customClass="QuestionViewController" customModule="iosDevLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" id="6Pk-RA-IXD" customClass="QuestionViewController" customModule="iosDevLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFA-on-U2f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
