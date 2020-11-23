@@ -48,6 +48,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JU-Quiz" id="fvi-qy-XxC"/>
+                    <connections>
+                        <outlet property="startButton" destination="y03-75-v5h" id="pQr-3I-6o0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXL-Vm-bmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +67,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-pM-847">
                                 <rect key="frame" x="15" y="103" width="384" height="744"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite food?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-aS-wFw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite food?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-aS-wFw">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="364.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -77,7 +80,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-om-Ep7">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="174.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qE-WC-exY">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5qE-WC-exY">
                                                         <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="174.66666666666666"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Fish"/>
@@ -85,7 +88,7 @@
                                                             <action selector="buttonAnswerAHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="O6Q-MA-rRp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ4-DR-Vu3">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TZ4-DR-Vu3">
                                                         <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="174.66666666666666"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Steak"/>
@@ -98,7 +101,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-oG-gkf">
                                                 <rect key="frame" x="0.0" y="189.66666666666669" width="384" height="174.66666666666669"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D19-PM-yj9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D19-PM-yj9">
                                                         <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="174.66666666666666"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Tacos"/>
@@ -106,7 +109,7 @@
                                                             <action selector="buttonAnswerCHandler:" destination="6Pk-RA-IXD" eventType="touchUpInside" id="lR2-5q-flF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-ko-ErY">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-ko-ErY">
                                                         <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="174.66666666666666"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <state key="normal" title="Pizza"/>

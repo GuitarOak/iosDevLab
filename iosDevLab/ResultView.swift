@@ -56,8 +56,7 @@ class ResultView: UIView {
         button.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
         button.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
-    }
-    
+    }   
     
     
 }
