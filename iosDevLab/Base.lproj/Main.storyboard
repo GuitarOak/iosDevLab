@@ -39,12 +39,21 @@
                                     <segue destination="6Pk-RA-IXD" kind="show" id="5wi-bV-zQ2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYv-Bn-mWn">
+                                <rect key="frame" x="172" y="483" width="70" height="30"/>
+                                <state key="normal" title="Highscore"/>
+                                <connections>
+                                    <action selector="highscoreButtonHandler:" destination="fp5-1b-Jzt" eventType="touchUpInside" id="DaQ-5f-GAf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2MX-Qn-bzw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="y03-75-v5h" firstAttribute="centerX" secondItem="yy4-Iu-Npl" secondAttribute="centerX" id="9VR-Wx-FW5"/>
+                            <constraint firstItem="gYv-Bn-mWn" firstAttribute="top" secondItem="y03-75-v5h" secondAttribute="bottom" constant="20" id="oHH-cE-CEp"/>
                             <constraint firstItem="y03-75-v5h" firstAttribute="centerY" secondItem="yy4-Iu-Npl" secondAttribute="centerY" id="rVV-Ay-Rd4"/>
+                            <constraint firstItem="gYv-Bn-mWn" firstAttribute="centerX" secondItem="y03-75-v5h" secondAttribute="centerX" id="rkl-2H-CfZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JU-Quiz" id="fvi-qy-XxC"/>

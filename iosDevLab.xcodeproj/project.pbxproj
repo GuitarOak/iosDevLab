@@ -10,6 +10,9 @@
 		BC0A7831256BD9DD00BAC25A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A7830256BD9DD00BAC25A /* Question.swift */; };
 		BC0A7836256BDC9F00BAC25A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A7835256BDC9F00BAC25A /* StartViewController.swift */; };
 		BC0A783B256BFD8600BAC25A /* QuestionsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0A783A256BFD8600BAC25A /* QuestionsResult.swift */; };
+		BC28743E256FD33D00288564 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28743C256FD33D00288564 /* GameResult+CoreDataClass.swift */; };
+		BC28743F256FD33D00288564 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */; };
+		BC287444256FD84900288564 /* HighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC287443256FD84900288564 /* HighscoreTableViewController.swift */; };
 		BCB2EAA3256922EB0071003D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAA2256922EB0071003D /* AppDelegate.swift */; };
 		BCB2EAA5256922EB0071003D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAA4256922EB0071003D /* SceneDelegate.swift */; };
 		BCB2EAAA256922EB0071003D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB2EAA8256922EB0071003D /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		BC0A7830256BD9DD00BAC25A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BC0A7835256BDC9F00BAC25A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		BC0A783A256BFD8600BAC25A /* QuestionsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResult.swift; sourceTree = "<group>"; };
+		BC28743C256FD33D00288564 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC287443256FD84900288564 /* HighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreTableViewController.swift; sourceTree = "<group>"; };
 		BCB2EA9F256922EB0071003D /* iosDevLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDevLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB2EAA2256922EB0071003D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB2EAA4256922EB0071003D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		BCB2EAA1256922EB0071003D /* iosDevLab */ = {
 			isa = PBXGroup;
 			children = (
+				BC28743C256FD33D00288564 /* GameResult+CoreDataClass.swift */,
+				BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */,
 				BCB2EAA2256922EB0071003D /* AppDelegate.swift */,
 				BCB2EAA4256922EB0071003D /* SceneDelegate.swift */,
 				BCB2EAA8256922EB0071003D /* Main.storyboard */,
@@ -124,6 +132,7 @@
 				BC0A7830256BD9DD00BAC25A /* Question.swift */,
 				BC0A783A256BFD8600BAC25A /* QuestionsResult.swift */,
 				BC0A7835256BDC9F00BAC25A /* StartViewController.swift */,
+				BC287443256FD84900288564 /* HighscoreTableViewController.swift */,
 			);
 			path = iosDevLab;
 			sourceTree = "<group>";
@@ -276,15 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC287444256FD84900288564 /* HighscoreTableViewController.swift in Sources */,
 				BCB2EAE42569448A0071003D /* ResultViewController.swift in Sources */,
 				BC0A7836256BDC9F00BAC25A /* StartViewController.swift in Sources */,
 				BCB2EAA3256922EB0071003D /* AppDelegate.swift in Sources */,
 				BCB2EAA5256922EB0071003D /* SceneDelegate.swift in Sources */,
 				BCB2EADF25692C230071003D /* QuestionViewController.swift in Sources */,
 				BCB2EAAD256922EB0071003D /* iosDevLab.xcdatamodeld in Sources */,
+				BC28743E256FD33D00288564 /* GameResult+CoreDataClass.swift in Sources */,
 				BC0A783B256BFD8600BAC25A /* QuestionsResult.swift in Sources */,
 				BC0A7831256BD9DD00BAC25A /* Question.swift in Sources */,
 				BCB2EAE9256945220071003D /* ResultView.swift in Sources */,
+				BC28743F256FD33D00288564 /* GameResult+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
