@@ -43,14 +43,14 @@ class QuestionViewController: UIViewController {
             button?.layer.cornerRadius = 20
         }
         
-        questionLabel.text = question?.question
+        questionLabel.text = question?.question.htmlDecoded
         buttons.shuffle()
         let correctButton = buttons.removeFirst()
-        correctButton?.setTitle(question?.correctAnswer, for: .normal)
+        correctButton?.setTitle(question?.correctAnswer.htmlDecoded, for: .normal)
         
         question?.incorrectAnswers.forEach({ (answer) in
             let button = buttons.removeFirst()
-            button?.setTitle(answer, for: .normal)
+            button?.setTitle(answer.htmlDecoded, for: .normal)
         })
         
     }
@@ -117,6 +117,8 @@ class QuestionViewController: UIViewController {
         questionViewController.questions = questions
         navigationController?.pushViewController(questionViewController, animated: true)
     }
+    
+    // MARK: - Saving the result
     
     private func saveGameResult() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
