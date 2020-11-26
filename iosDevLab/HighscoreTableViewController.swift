@@ -26,8 +26,8 @@ class HighscoreTableViewController: UITableViewController {
     }
 
     private func setupFetchedResultsController() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        // Refactor the setup of the NSFetchedResultsController into GameResultDatabaseManager
+        let managedObjectContext = DatabaseManager.shared.managedObjectContext
         
         let request = NSFetchRequest<GameResult>(entityName: "GameResult")
         let dataSort = NSSortDescriptor(key: "date", ascending: false)

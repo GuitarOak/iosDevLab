@@ -14,6 +14,8 @@
 		BC28743F256FD33D00288564 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */; };
 		BC287444256FD84900288564 /* HighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC287443256FD84900288564 /* HighscoreTableViewController.swift */; };
 		BC28744E256FEBA900288564 /* String+HtmlDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28744D256FEBA900288564 /* String+HtmlDecoding.swift */; };
+		BC287453256FEE0200288564 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC287452256FEE0200288564 /* DatabaseManager.swift */; };
+		BC287458256FF1F000288564 /* GameResultDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC287457256FF1F000288564 /* GameResultDatabaseManager.swift */; };
 		BCB2EAA3256922EB0071003D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAA2256922EB0071003D /* AppDelegate.swift */; };
 		BCB2EAA5256922EB0071003D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2EAA4256922EB0071003D /* SceneDelegate.swift */; };
 		BCB2EAAA256922EB0071003D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB2EAA8256922EB0071003D /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC287443256FD84900288564 /* HighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreTableViewController.swift; sourceTree = "<group>"; };
 		BC28744D256FEBA900288564 /* String+HtmlDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HtmlDecoding.swift"; sourceTree = SOURCE_ROOT; };
+		BC287452256FEE0200288564 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BC287457256FF1F000288564 /* GameResultDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultDatabaseManager.swift; sourceTree = "<group>"; };
 		BCB2EA9F256922EB0071003D /* iosDevLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDevLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB2EAA2256922EB0071003D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB2EAA4256922EB0071003D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				BC28743C256FD33D00288564 /* GameResult+CoreDataClass.swift */,
 				BC28743D256FD33D00288564 /* GameResult+CoreDataProperties.swift */,
 				BC0A783A256BFD8600BAC25A /* QuestionsResult.swift */,
+				BC287452256FEE0200288564 /* DatabaseManager.swift */,
+				BC287457256FF1F000288564 /* GameResultDatabaseManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -310,9 +316,11 @@
 				BCB2EAA3256922EB0071003D /* AppDelegate.swift in Sources */,
 				BCB2EAA5256922EB0071003D /* SceneDelegate.swift in Sources */,
 				BCB2EADF25692C230071003D /* QuestionViewController.swift in Sources */,
+				BC287453256FEE0200288564 /* DatabaseManager.swift in Sources */,
 				BCB2EAAD256922EB0071003D /* iosDevLab.xcdatamodeld in Sources */,
 				BC28744E256FEBA900288564 /* String+HtmlDecoding.swift in Sources */,
 				BC28743E256FD33D00288564 /* GameResult+CoreDataClass.swift in Sources */,
+				BC287458256FF1F000288564 /* GameResultDatabaseManager.swift in Sources */,
 				BC0A783B256BFD8600BAC25A /* QuestionsResult.swift in Sources */,
 				BC0A7831256BD9DD00BAC25A /* Question.swift in Sources */,
 				BCB2EAE9256945220071003D /* ResultView.swift in Sources */,
