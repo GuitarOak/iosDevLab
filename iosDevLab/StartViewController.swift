@@ -10,22 +10,47 @@ import UIKit
 class StartViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var numberOfQuestionsTextField: UITextField!
     
     var questions: [Question] = []
-    
+    var difficulty = ""
+    var numberOfQuestionsFromUser = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         startButton.isEnabled = false
-        downloadQuestions(amount: 5)
+        if difficulty != "" && numberOfQuestionsFromUser != "" {
+            downloadQuestions()
+        }
+        //downloadQuestions()
     }
     
+    @IBAction func easyButtonHandler(_ sender: Any) {
+        difficulty = "easy"
+        print(difficulty)
+    }
+    
+    @IBAction func mediumButtonHandler(_ sender: Any) {
+        difficulty = "medium"
+        print(difficulty)
+    }
+    
+    @IBAction func hardButtonHandler(_ sender: Any) {
+        difficulty = "hard"
+        print(difficulty)
+    }
+    
+    @IBAction func numberOfQuestionsTextFieldHandler(_ sender: Any) {
+        numberOfQuestionsFromUser = numberOfQuestionsTextField.text!
+       
+    }
     @IBAction func highscoreButtonHandler(_ sender: Any) {
         let highscoreTableViewController = HighscoreTableViewController()
         navigationController?.pushViewController(highscoreTableViewController, animated: true)
     }
-    private func downloadQuestions(amount: Int){
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple")
+    private func downloadQuestions(){
+        
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(numberOfQuestionsFromUser )&category=12&difficulty=\(difficulty)&type=multiple")
         else {
             return
         }
