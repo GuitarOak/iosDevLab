@@ -78,7 +78,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="numberOfQuestionsTextFieldHandler:" destination="fp5-1b-Jzt" eventType="valueChanged" id="U2c-od-YHR"/>
+                                    <action selector="numberOfQuestionsTextFieldDidChange:" destination="fp5-1b-Jzt" eventType="editingChanged" id="wEk-fl-RjZ"/>
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8ZQ-Qa-bUs">

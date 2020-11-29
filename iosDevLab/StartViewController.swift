@@ -19,9 +19,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
 
         startButton.isEnabled = false
-        if difficulty != "" && numberOfQuestionsFromUser != "" {
-            downloadQuestions()
-        }
+        
         //downloadQuestions()
     }
     
@@ -40,9 +38,11 @@ class StartViewController: UIViewController {
         print(difficulty)
     }
     
-    @IBAction func numberOfQuestionsTextFieldHandler(_ sender: Any) {
+    @IBAction func numberOfQuestionsTextFieldDidChange(_ sender: Any) {
         numberOfQuestionsFromUser = numberOfQuestionsTextField.text!
-       
+        if numberOfQuestionsFromUser != "" {
+            downloadQuestions()
+        }
     }
     @IBAction func highscoreButtonHandler(_ sender: Any) {
         let highscoreTableViewController = HighscoreTableViewController()
