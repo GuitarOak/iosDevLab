@@ -13,7 +13,7 @@ class StartViewController: UIViewController {
     @IBOutlet weak var numberOfQuestionsTextField: UITextField!
     
     var questions: [Question] = []
-    var difficulty = ""
+    var difficulty = "medium"
     var numberOfQuestionsFromUser = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,13 @@ class StartViewController: UIViewController {
         numberOfQuestionsFromUser = numberOfQuestionsTextField.text!
         if numberOfQuestionsFromUser != "" {
             downloadQuestions()
+        }else{
+            let alertController = UIAlertController(title: "Incorrect input", message: "Enter a number", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "Will do!", style: UIAlertAction.Style.default, handler: { _ in
+                
+                
+            }))
+            present(alertController, animated: true, completion: nil)
         }
     }
     @IBAction func highscoreButtonHandler(_ sender: Any) {
